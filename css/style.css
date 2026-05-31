@@ -14,6 +14,7 @@
   --gold-lt:   #F5E9C4;
   --forest:    #1E5248;
   --dark:      #0D2822;
+  --hero-dark: #12342D;
   --ink:       #1C1810;
   --muted:     #7A7060;
   --divider:   #E8E0CC;
@@ -237,7 +238,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   position: relative;
   min-height: 100svh;
   min-height: 100vh;
-  background: var(--dark);
+  background: var(--hero-dark);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -269,7 +270,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, var(--dark) 38%, rgba(13,40,34,0.4) 72%, transparent 100%);
+  background: linear-gradient(to right, var(--hero-dark) 38%, rgba(18,52,45,0.4) 72%, transparent 100%);
   pointer-events: none;
 }
 .hero::before {
@@ -279,7 +280,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   left: 0;
   right: 0;
   height: 180px;
-  background: linear-gradient(to bottom, transparent, var(--dark));
+  background: linear-gradient(to bottom, transparent, var(--hero-dark));
   z-index: 2;
   pointer-events: none;
 }
@@ -298,6 +299,15 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   text-transform: uppercase;
   margin-bottom: 1.25rem;
   display: block;
+}
+.hero__opening {
+  display: inline-block;
+  font-family: var(--f-label);
+  font-size: clamp(0.875rem, 1.6vw, 1.125rem);
+  letter-spacing: 0.22em;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 .hero__title {
   font-family: var(--f-display);
