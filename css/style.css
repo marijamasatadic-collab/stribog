@@ -1155,12 +1155,12 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   padding: var(--section-py) var(--gutter);
 }
 .v-steps__inner {
-  max-width: 860px;
+  max-width: 720px;
   margin: 0 auto;
 }
 .v-steps__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
   margin-top: clamp(32px, 4vw, 56px);
   position: relative;
@@ -1169,8 +1169,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   content: '';
   position: absolute;
   top: 2rem;
-  left: calc(12.5% + 1rem);
-  right: calc(12.5% + 1rem);
+  left: calc(16.666% + 1rem);
+  right: calc(16.666% + 1rem);
   height: 1px;
   background: var(--divider);
   z-index: 0;
