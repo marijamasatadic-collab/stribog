@@ -1165,6 +1165,12 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   margin-top: clamp(32px, 4vw, 56px);
   position: relative;
 }
+.v-steps__grid--two {
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .v-steps__grid::before {
   content: '';
   position: absolute;
@@ -1174,6 +1180,10 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   height: 1px;
   background: var(--divider);
   z-index: 0;
+}
+.v-steps__grid--two::before {
+  left: calc(25% + 1rem);
+  right: calc(25% + 1rem);
 }
 .v-step {
   display: flex;
