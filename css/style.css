@@ -415,6 +415,18 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   object-fit: cover;
   transition: transform 0.5s;
 }
+.svc-card__img--relax img {
+  object-position: center bottom;
+  transform-origin: center bottom;
+}
+.svc-card__img--therapeutic img {
+  object-position: center 88%;
+  transform-origin: center bottom;
+}
+.svc-card__img--corporate img {
+  object-position: center 42%;
+  transform-origin: center 42%;
+}
 .svc-card:hover .svc-card__img img { transform: scale(1.04); }
 .svc-card__body {
   padding: 1.5rem 1.5rem 2rem;
@@ -655,6 +667,10 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   object-fit: cover;
   transition: transform 0.5s;
 }
+.img-strip__img--massage-elbow { object-position: center center; }
+.img-strip__img--massage-table { object-position: center center; }
+.img-strip__img--loyalty { object-position: center center; }
+.img-strip__img--spa-detail { object-position: center center; }
 .img-strip__grid > *:hover img { transform: scale(1.04); }
 
 
