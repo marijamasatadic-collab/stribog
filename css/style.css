@@ -820,6 +820,16 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   display: block;
   transition: transform 0.6s;
 }
+.ritual__img--feet {
+  background: #f4f0ea;
+}
+.ritual__img--feet img {
+  object-fit: contain;
+  object-position: center center;
+}
+.ritual__img--head img {
+  object-position: center 42%;
+}
 .ritual:hover .ritual__img img { transform: scale(1.03); }
 
 .ritual__body {
