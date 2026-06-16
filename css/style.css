@@ -250,7 +250,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   inset: 0;
   width: 100%; height: 100%;
   object-fit: cover;
-  opacity: 0.12;
+  opacity: 0.2;
 }
 
 .hero__deity {
@@ -1606,6 +1606,12 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .about-gallery__grid > * { aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius); }
 .about-gallery__grid img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+.about-gallery__img--madero { object-position: center 36%; }
+.about-gallery__img--massage-room { object-position: center 38%; }
+.about-gallery__img--loyalty { object-position: center center; }
+.about-gallery__img--prep { object-position: center 28%; }
+.about-gallery__img--head { object-position: center 42%; }
+.about-gallery__img--back { object-position: center 42%; }
 .about-gallery__grid > *:hover img { transform: scale(1.04); }
 
 

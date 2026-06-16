@@ -23,7 +23,7 @@ navLinks?.querySelectorAll('.site-nav__link').forEach(link => {
 /* ── Desktop: reveal phone number on call-CTA click instead of opening dialer ── */
 function formatTel(href) {
   const digits = href.replace(/[^\d+]/g, '').replace(/^\+381/, '0');
-  return digits.replace(/(\d{3})(\d{3})(\d+)/, '$1 $2 $3');
+  return digits.replace(/^(\d{3})(\d{2})(\d{2})(\d{3})$/, '$1 $2 $3 $4');
 }
 
 const isDesktop = () => window.matchMedia('(min-width: 768px)').matches;
