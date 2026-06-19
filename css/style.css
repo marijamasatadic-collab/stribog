@@ -1903,6 +1903,29 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
   .services__grid { grid-template-columns: 1fr; }
 
+  /* Na telefonu prikazi ceo kadar kartica umesto odsecanja portretnih slika. */
+  .svc-card__img {
+    aspect-ratio: 4 / 3;
+    background: var(--cream);
+  }
+  .svc-card .svc-card__img img {
+    object-fit: contain;
+    object-position: center;
+  }
+
+  /* Fotografije tretmana imaju razlicite formate; prirodna visina cuva ceo kadar. */
+  .ritual__img {
+    aspect-ratio: auto;
+    background: var(--cream);
+  }
+  .ritual__img img,
+  .ritual__img--feet img,
+  .ritual__img--head img {
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
   .loyalty__inner { gap: 2rem; }
   .loyalty__item { flex-direction: column; text-align: center; }
 
@@ -1926,12 +1949,19 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .img-strip__grid img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    background: var(--cream);
   }
 
   .v-steps__grid { grid-template-columns: 1fr; }
 
   .about-gallery__grid { grid-template-columns: 1fr; }
+  .about-gallery__grid > * { aspect-ratio: auto; }
+  .about-gallery__grid img {
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
   .about-us__grid { grid-template-columns: 1fr; }
 
   .price-loyalty { flex-direction: column; gap: 1.5rem; }
