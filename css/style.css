@@ -1926,6 +1926,19 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
     object-position: center;
   }
 
+  /* Terapeutska masaza: mobilni kadar usmeren na ruke na ledjima. */
+  .ritual__img--therapeutic,
+  .ritual__img--maderotherapy {
+    aspect-ratio: 4 / 3;
+  }
+  .ritual__img--therapeutic img,
+  .ritual__img--maderotherapy img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 78%;
+  }
+
   .loyalty__inner { gap: 2rem; }
   .loyalty__item { flex-direction: column; text-align: center; }
 
