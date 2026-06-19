@@ -12,9 +12,9 @@
   --cream:     #F7F2E4;
   --gold:      #C4A23A;
   --gold-lt:   #F5E9C4;
-  --forest:    #1E5248;
-  --dark:      #0D2822;
-  --hero-dark: #12342D;
+  --forest:    #225B51;
+  --dark:      #10342C;
+  --hero-dark: #153E35;
   --ink:       #1C1810;
   --muted:     #7A7060;
   --divider:   #E8E0CC;
@@ -545,11 +545,12 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .featured-spa__img {
   border-radius: var(--radius);
   overflow: hidden;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 9 / 16;
 }
 .featured-spa__img img {
   width: 100%; height: 100%;
   object-fit: cover;
+  object-position: center 8%;
 }
 
 
