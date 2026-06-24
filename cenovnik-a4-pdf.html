@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<title>Stribog cenovnik A4</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f4f1ea; color: #174951; font-family: Arial, Helvetica, sans-serif; }
+  .page { width: 210mm; height: 297mm; padding: 16mm 12mm 12mm; background: #fffdf8; position: relative; overflow: hidden; }
+  .page::before { content: ""; position: absolute; inset: 7mm; border: 1px solid rgba(181,138,65,.28); pointer-events: none; }
+  header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 17mm; position: relative; z-index: 1; }
+  .logo { width: 27mm; height: 27mm; object-fit: contain; margin-top: -2mm; }
+  .title { text-align: right; }
+  h1 { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: 38px; line-height: 1; letter-spacing: .04em; color: #123e47; }
+  .subtitle { margin-top: 7px; font-size: 12px; letter-spacing: .08em; color: #8b6e38; }
+  .loyalty { display: grid; grid-template-columns: 1fr 1fr; gap: 18mm; margin: 0 4mm 10mm; position: relative; z-index: 1; }
+  .loyalty div { border-top: 1px solid rgba(181,138,65,.35); border-bottom: 1px solid rgba(181,138,65,.35); padding: 7px 0; color: #174951; font-size: 12px; }
+  .loyalty strong { color: #8b6e38; font-size: 18px; margin-right: 6px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8mm; position: relative; z-index: 1; }
+  .section { margin-bottom: 5.35mm; break-inside: avoid; }
+  h2 { margin: 0 0 3.5mm; font-family: Georgia, 'Times New Roman', serif; font-size: 16px; line-height: 1.1; color: #123e47; }
+  .row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 5mm; align-items: baseline; padding: 1.8mm 0; border-bottom: 1px solid rgba(23,73,81,.12); font-size: 11.6px; line-height: 1.05; color: #4e5f61; }
+  .price { color: #174951; font-weight: 700; white-space: nowrap; }
+  footer { position: absolute; left: 12mm; right: 12mm; bottom: 10mm; display: grid; grid-template-columns: 1fr 1fr; gap: 12mm; font-size: 12px; line-height: 1.25; color: #4e5f61; z-index: 1; }
+  footer strong { color: #174951; }
+</style>
+</head>
+<body>
+<section class="page">
+  <header><img src="assets/images/logo-stribog.png" class="logo" alt="Stribog"><div class="title"><h1>CENOVNIK</h1><div class="subtitle">STRIBOG SALON ZA MASAŽU · VRAČAR</div></div></header>
+  <div class="loyalty"><div><strong>10%</strong> popusta od trećeg dolaska</div><div><strong>15%</strong> popusta za paket od 10 masaža</div></div>
+  <main class="grid">
+    <div>
+      <section class="section"><h2>Relax masaža</h2><div class="row"><span>Leđa + zadnja strana nogu (45')</span><span class="price">3.000 RSD</span></div><div class="row"><span>Celo telo (60')</span><span class="price">3.400 RSD</span></div><div class="row"><span>Celo telo + lice (75')</span><span class="price">3.800 RSD</span></div></section>
+      <section class="section"><h2>Terapeutska masaža</h2><div class="row"><span>Parcijalna (30')</span><span class="price">2.800 RSD</span></div><div class="row"><span>Leđa + zadnja strana nogu (45')</span><span class="price">3.300 RSD</span></div><div class="row"><span>Celo telo (60')</span><span class="price">3.800 RSD</span></div><div class="row"><span>75 minuta</span><span class="price">4.300 RSD</span></div></section>
+      <section class="section"><h2>Sportska masaža</h2><div class="row"><span>Parcijalna (30')</span><span class="price">3.300 RSD</span></div><div class="row"><span>Leđa + zadnja strana nogu (45')</span><span class="price">3.800 RSD</span></div><div class="row"><span>Celo telo (60')</span><span class="price">4.300 RSD</span></div></section>
+      <section class="section"><h2>Limfna drenaža</h2><div class="row"><span>30 minuta</span><span class="price">2.500 RSD</span></div><div class="row"><span>45 minuta</span><span class="price">2.900 RSD</span></div><div class="row"><span>Paket 10 × 30 min</span><span class="price">21.000 RSD</span></div><div class="row"><span>Paket 10 × 45 min</span><span class="price">25.000 RSD</span></div></section>
+      <section class="section"><h2>Anticelulit masaža</h2><div class="row"><span>30 minuta</span><span class="price">2.800 RSD</span></div><div class="row"><span>45 minuta</span><span class="price">3.200 RSD</span></div><div class="row"><span>50 minuta</span><span class="price">3.300 RSD</span></div><div class="row"><span>Paket 10 × 30 min</span><span class="price">24.000 RSD</span></div><div class="row"><span>Paket 10 × 45 min</span><span class="price">27.000 RSD</span></div><div class="row"><span>Paket 10 × 50 min</span><span class="price">28.000 RSD</span></div></section>
+    </div>
+    <div>
+      <section class="section"><h2>Maderoterapija</h2><div class="row"><span>30 minuta</span><span class="price">3.000 RSD</span></div><div class="row"><span>45 minuta</span><span class="price">3.400 RSD</span></div><div class="row"><span>50 minuta</span><span class="price">3.500 RSD</span></div><div class="row"><span>Paket 10 × 30 min</span><span class="price">25.000 RSD</span></div><div class="row"><span>Paket 10 × 45 min</span><span class="price">29.000 RSD</span></div><div class="row"><span>Paket 10 × 50 min</span><span class="price">30.000 RSD</span></div></section>
+      <section class="section"><h2>Masaža lica i glave</h2><div class="row"><span>30 minuta</span><span class="price">2.500 RSD</span></div></section>
+      <section class="section"><h2>Masaža stopala</h2><div class="row"><span>30 minuta</span><span class="price">2.500 RSD</span></div></section>
+      <section class="section"><h2>Duo masaža</h2><div class="row"><span>30 minuta</span><span class="price">5.000 RSD</span></div><div class="row"><span>45 minuta</span><span class="price">5.800 RSD</span></div><div class="row"><span>60 minuta</span><span class="price">6.600 RSD</span></div><div class="row"><span>75 minuta</span><span class="price">7.400 RSD</span></div></section>
+      <section class="section"><h2>SPA Dani</h2><div class="row"><span>Milica — 90 minuta</span><span class="price">4.300 RSD</span></div><div class="row"><span>Dragica — 100 minuta</span><span class="price">4.800 RSD</span></div><div class="row"><span>Slavica — 120 minuta</span><span class="price">5.200 RSD</span></div></section>
+    </div>
+  </main>
+  <footer><div><strong>Načini plaćanja:</strong> gotovina · platna kartica · uplata na račun</div><div><strong>Zakazivanje:</strong> 060 54 66 905 · Gospodara Vučića 27, Vračar</div></footer>
+</section>
+</body>
+</html>
